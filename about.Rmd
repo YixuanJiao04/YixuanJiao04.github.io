@@ -1,8 +1,64 @@
 ---
-title: "About Me"
+title: "Yixuan Jiao"
 output:
   html_document:
     theme: cosmo
 ---
 
-# Welcome
+## Contact
+
+858-305-8262
+
+yj2752@cumc.columbia.edu
+
+## EDUCATION
+
+### University of California, San Diego | San Diego, CA	
+
+September 2018 - June 2022
+
+
+Bachelor of Science in Biology with Specialization in Bioinformatics
+
+Major GPA: 3.71 / 4.0
+
+## WORK EXPERIENCE
+
+### BeiGene Biotechnology Company | Beijing, China
+
+May 2021 - August 2021
+
+Bioinformatics Intern, Department of Research and Development
+
+-	Designed a pair-matching pipeline, including using BWA/Samtools, vcftools, and data visualization, to determine whether a pair of DNA gene panel/WES samples collected from tumor cells or normal blood was from the same patient in a clinical trial.
+-	Conducted a general data preprocessing using GATK/BWA/Samtools. Assigned new names and transformed it into a simple list file using python automation script to comply with the naming and formatting rules in the Human Genetics Resources Administration of China.
+-	Worked cooperatively with various research departments in scientific hypothesis tests by providing critical biostatistical and programming support.
+-	Mastered the techniques in working with NGS data to conduct DNA/RNA identification, detect SNV/CNV/SV in tumors, and mutational signatures.
+- Explored and experimented with multiple bioinformatics tools, including GATK, IGV, and R-shiny packages.
+
+### QL Biopharm | Beijing, China	
+
+July 2019 - September
+
+Research Assistant, Department of Protein Chemistry
+
+-	Assisted with the maintenance of lab equipment and organization of lab reagents and consumables stock.
+-	Conducted reverse phase chromatography and affinity chromatography to purify specific proteins.
+-	Participated in departmental meetings and discussed newly published journal articles applicable to the research area.
+
+## TECHNICAL SKILLS AND LANGUAGE                                                                                                                 
+### Programming Skills: 
+
+Proficient in Python, R, C++, and Java. Intermediate in data structure and algorithms. Intermediate in UNIX system operation.
+
+### Quantitative Analysis Skills: 
+
+BWA, GATK, STAR, Samtools, Biopython, & Bioconductor
+
+### Language: 
+
+Chinese (Native), English (Fluent)
+
+
+
+
