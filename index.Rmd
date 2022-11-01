@@ -2,10 +2,8 @@
 title: "Yixuan Jiao's Personal Website"
 output:
   html_document:
-    toc: true
-    toc_float: true
-    theme: cosmo
+    css: bootstrap.css
 ---
 
-# Hi
-# hi
+# Landing page
+Initial landing page
