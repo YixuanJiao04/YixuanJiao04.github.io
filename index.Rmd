@@ -5,5 +5,8 @@ output:
     theme: cosmo
 ---
 
-# Landing page
-T
+This is Yixuan Jiao, a first year master of biostatistics in Columbia University Mailman school of Public Health.
+
+<img src="images/portrait.jpeg" style="width:30%">
+
+You can check my personal experience from tab next to the home button and solution of problem2 can be found in this [dashboard](problem2.html)

@@ -1,0 +1,73 @@
+---
+title: "Dashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+```
+
+```{r include=FALSE}
+data("instacart")
+```
+
+
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r}
+instacart %>% 
+  count(aisle) %>% 
+  filter(n > 10000) %>% 
+  mutate(aisle = fct_reorder(aisle, n)) %>% 
+  plot_ly(x = ~aisle, 
+          y = ~n, 
+          color = ~aisle, 
+          type = "bar", 
+          colors = "viridis") %>%
+  layout(showlegend=FALSE)
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+instacart %>%
+  mutate(order_dow = factor(order_dow)) %>%
+  mutate(order_dow = recode_factor(order_dow, 
+                                   "0" = "Sunday",
+                                   "1" = "Monday",
+                                   "2" = "Tuesday",
+                                   "3" = "Wednesday",
+                                   "4" = "Thursday",
+                                   "5" = "Friday",
+                                   "6" = "Saturday")) %>%
+  mutate(order_dow = fct_relevel(order_dow,"Sunday", after = Inf)) %>%
+  group_by(order_dow,order_hour_of_day) %>%
+  summarise(count = n()) %>%
+  plot_ly(x = ~order_hour_of_day, 
+          y = ~count, 
+          type = "scatter",
+          mode = "lines",
+          color = ~order_dow,
+          colors = "viridis",
+          line = list(shape = "spline"))
+```
+
+### Chart C
+
+```{r}
+
+```
+
