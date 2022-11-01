@@ -1,9 +1,9 @@
-name: "Yay internet!"
+name: "Yixuan Jiao's Web"
 output_dir: "."
 navbar:
   title: "Home"
-  right:
-    - text: "About"
+  left:
+    - text: "About me"
       href: about.html
     - icon: fa-envelope fa-lg
       href: mailto:yj2752@cumc.columbia.edu
