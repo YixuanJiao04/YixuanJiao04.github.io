@@ -2,7 +2,7 @@
 title: "Yixuan Jiao's Personal Website"
 output:
   html_document:
-    css: bootstrap.css
+    theme: cosmo
 ---
 
 # Landing page

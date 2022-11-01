@@ -10,5 +10,4 @@ navbar:
     - icon: fa-github fa-lg
       href: http://github.com/YixuanJiao04/
 output:
-  html_document:
-    css: bootstrap.css
+  html_document
