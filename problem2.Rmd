@@ -32,7 +32,7 @@ instacart %>%
           color = ~aisle, 
           type = "bar", 
           colors = "viridis") %>%
-  layout(yaxis = list(title = "Number of Item Ordered"), xaxis = list(title = "Aisle"), showlegend=FALSE)
+  layout(title = "Top ordered Aisles", yaxis = list(title = "Number of Item Ordered"), xaxis = list(title = "Aisle"), showlegend=FALSE)
 ```
 
 Column {data-width=350}
@@ -75,6 +75,6 @@ instacart %>%
           type = "box", 
           color = ~department, 
           colors = "viridis") %>%
-  layout(title = "Distribution of Ordering Time Fistribution over a Day", yaxis = list(title = "Hour of Day"), showlegend=FALSE)
+  layout(title = "Distribution of Ordering Time", yaxis = list(title = "Hour of Day"), showlegend=FALSE)
 ```
 
