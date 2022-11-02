@@ -75,6 +75,6 @@ instacart %>%
           type = "box", 
           color = ~department, 
           colors = "viridis") %>%
-  layout(title = "Distribution of Ordering Time Fistribution over a Day", yaxis = list(title = "Hour of Day"))
+  layout(title = "Distribution of Ordering Time Fistribution over a Day", yaxis = list(title = "Hour of Day"), showlegend=FALSE)
 ```
 
