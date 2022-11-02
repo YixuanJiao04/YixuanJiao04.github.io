@@ -5,6 +5,8 @@ navbar:
   left:
     - text: "Experience"
       href: experience.html
+    - text: "Dashborad"
+      href: problem2.html
   right:
     - text: "About"
       href: about.html

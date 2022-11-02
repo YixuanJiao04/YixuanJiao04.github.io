@@ -17,8 +17,6 @@ library(plotly)
 data("instacart")
 ```
 
-
-
 Column {data-width=650}
 -----------------------------------------------------------------------
 
@@ -34,7 +32,7 @@ instacart %>%
           color = ~aisle, 
           type = "bar", 
           colors = "viridis") %>%
-  layout(showlegend=FALSE)
+  layout(yaxis = list(title = "Number of Item Ordered"), xaxis = list(title = "Aisle"), showlegend=FALSE)
 ```
 
 Column {data-width=350}
@@ -62,7 +60,8 @@ instacart %>%
           mode = "lines",
           color = ~order_dow,
           colors = "viridis",
-          line = list(shape = "spline"))
+          line = list(shape = "spline")) %>%
+  layout(title = "Number of Order accross a Day", yaxis = list(title = "Number of Order"), xaxis = list(title = "Hour of Day"))
 ```
 
 ### Chart C
