@@ -67,6 +67,14 @@ instacart %>%
 ### Chart C
 
 ```{r}
-
+instacart %>% 
+  add_count(department) %>%
+  filter(n > 1000) %>% 
+  plot_ly(x = ~department, 
+          y = ~order_hour_of_day, 
+          type = "box", 
+          color = ~department, 
+          colors = "viridis") %>%
+  layout(title = "Distribution of Ordering Time Fistribution over a Day", yaxis = list(title = "Hour of Day"))
 ```
 

@@ -5,4 +5,4 @@ output:
     theme: cosmo
 ---
 
-This website made by R
+This website is made by R
